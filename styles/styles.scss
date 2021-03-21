@@ -1,0 +1,127 @@
+@import "./variables";
+
+//Basic CSS Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: $font-family;
+}
+
+//Banner
+.hero {
+  &__btn {
+    //position
+    align-items: center;
+    display: flex;
+    left: 1rem;
+    position: absolute;
+    top: 0.7rem;
+
+    //style
+    background-color: transparent;
+    border: none;
+    color: $secondary-color;
+
+    span {
+      font-size: 1.3rem;
+      padding: 0.75rem;
+    }
+  }
+}
+
+//Main Content
+.content-box {
+  //position
+  position: absolute;
+  top: 217px;
+  min-width: 375px;
+
+  //style
+  background-color: $secondary-color;
+  border-radius: 2.7rem;
+  border-top: 1px;
+  color: $primary-color;
+  padding: 1.42rem 1.77rem;
+}
+
+//Content Sections
+
+//Header Section
+.header {
+  //position
+  align-items: center;
+  display: grid;
+  grid-template-columns: 92% 8%;
+  padding-bottom: 1rem;
+
+  //using flexbox to align 'header__title', 'header__follow--text' and 'header__follow--icon'
+  &__wrapper {
+    display: flex;
+  }
+
+  &__title {
+    font-size: 3.1rem;
+  }
+  //using flexbox to align 'follow--icon' and 'follow--text'
+  &__follow {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.3rem;
+
+    &--icon {
+      padding: 0 0.2rem;
+      cursor: pointer;
+    }
+
+    &--text {
+      padding: 0 0.2rem;
+      cursor: pointer;
+    }
+  }
+
+  &__more--icon {
+    cursor: pointer;
+  }
+}
+
+//Statistics Section
+.stats {
+  //position
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  padding: 0.6rem 0;
+
+  //style
+  border-bottom: 1px solid $primary-color;
+  border-top: 1px solid $primary-color;
+  text-align: center;
+
+  &__number {
+    font-size: 1.71rem;
+    line-height: 1;
+  }
+}
+
+//Categories Section
+.categories {
+  &__title {
+    padding: 1.5rem 0.35rem;
+  }
+
+  &__subtitle {
+    font-size: 1.78rem;
+    font-weight: $font-weight-regular;
+  }
+
+  //using grid to organise 'stats__title', 'stats__number' and 'stats__subtitle' accordingly
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 94% 6%;
+    padding: 1.5rem 0;
+
+    border-bottom: 0.5px solid $primary-color;
+  }
+}

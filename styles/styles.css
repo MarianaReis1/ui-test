@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.hero__btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 1rem;
+  position: absolute;
+  top: 0.7rem;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+}
+
+.hero__btn span {
+  font-size: 1.3rem;
+  padding: 0.75rem;
+}
+
+.content-box {
+  position: absolute;
+  top: 217px;
+  min-width: 375px;
+  background-color: #ffffff;
+  border-radius: 2.7rem;
+  border-top: 1px;
+  color: #462681;
+  padding: 1.42rem 1.77rem;
+}
+
+.header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 92% 8%;
+      grid-template-columns: 92% 8%;
+  padding-bottom: 1rem;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__title {
+  font-size: 3.1rem;
+}
+
+.header__follow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 0.3rem;
+}
+
+.header__follow--icon {
+  padding: 0 0.2rem;
+  cursor: pointer;
+}
+
+.header__follow--text {
+  padding: 0 0.2rem;
+  cursor: pointer;
+}
+
+.header__more--icon {
+  cursor: pointer;
+}
+
+.stats {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #462681;
+  border-top: 1px solid #462681;
+  text-align: center;
+}
+
+.stats__number {
+  font-size: 1.71rem;
+  line-height: 1;
+}
+
+.categories__title {
+  padding: 1.5rem 0.35rem;
+}
+
+.categories__subtitle {
+  font-size: 1.78rem;
+  font-weight: 400;
+}
+
+.categories__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 94% 6%;
+      grid-template-columns: 94% 6%;
+  padding: 1.5rem 0;
+  border-bottom: 0.5px solid #462681;
+}
+/*# sourceMappingURL=styles.css.map */
